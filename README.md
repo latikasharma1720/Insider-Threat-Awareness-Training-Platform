@@ -1,93 +1,54 @@
-# Build an LMS Platform: Next.js 13,  React, Stripe, Mux, Prisma, Tailwind, MySQL | Full Course 2023
+Insider Threat Awareness Training Platform
 
-![Copy of Copy of Copy of Copy of Fullstack Twitter Clone (9)](https://github.com/AntonioErdeljac/next13-lms-platform/assets/23248726/fa077fca-bb74-419a-84de-54ac103bb026)
+This project is a web-based platform designed to educate users about insider threats and improve organizational security awareness. It focuses on identifying risks caused by internal users and provides structured training to prevent data breaches, unauthorized access, and system misuse.
 
+The platform combines cybersecurity concepts with interactive learning modules to help users understand and mitigate insider threat risks.
 
-This is a repository for Build an LMS Platform: Next.js 13,  React, Stripe, Mux, Prisma, Tailwind, MySQL | Full Course 2023
+---
 
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=Big_aFLmekI)
+Objectives
 
-Key Features:
+* Educate users about insider threats and attack scenarios
+* Simulate real-world security risks such as data theft and social engineering
+* Provide training modules and quizzes to reinforce learning
+* Promote secure practices like access control and monitoring
 
-- Browse & Filter Courses
-- Purchase Courses using Stripe
-- Mark Chapters as Completed or Uncompleted
-- Progress Calculation of each Course
-- Student Dashboard
-- Teacher mode
-- Create new Courses
-- Create new Chapters
-- Easily reorder chapter position with drag n’ drop
-- Upload thumbnails, attachments and videos using UploadThing
-- Video processing using Mux
-- HLS Video player using Mux
-- Rich text editor for chapter description
-- Authentication using Clerk
-- ORM using Prisma
-- MySQL database using Planetscale
+---
 
-### Prerequisites
+Key Features
 
-**Node version 18.x.x**
+* User Authentication (Login & Registration)
+* Role-Based Access Control
+* Interactive Dashboard
+* Training Modules (Courses & Content Pages)
+* Quiz-Based Learning System
+* Basic Simulation & Lab Concepts
 
-### Cloning the repository
+---
 
-```shell
-git clone https://github.com/AntonioErdeljac/next13-lms-platform.git
-```
+Tech Stack
 
-### Install packages
+* HTML
+* CSS
+* JavaScript
+* Git & GitHub
 
-```shell
-npm i
-```
+---
 
-### Setup .env file
+Security Concepts Covered
 
+* Insider Threat Identification
+* Data Theft & Unauthorized Access
+* Malware Insertion & System Misuse
+* Social Engineering & Phishing
+* Access Control & Monitoring
+* Incident Response Awareness
 
-```js
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
+Prevention strategies such as access control, employee training, and monitoring are key components of the platform .
 
-DATABASE_URL=
+---
 
-UPLOADTHING_SECRET=
-UPLOADTHING_APP_ID=
+Conclusion
 
-MUX_TOKEN_ID=
-MUX_TOKEN_SECRET=
+This project provides a practical approach to understanding insider threats and highlights the importance of user awareness in strengthening organizational security.
 
-STRIPE_API_KEY=
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-STRIPE_WEBHOOK_SECRET=
-
-NEXT_PUBLIC_TEACHER_ID=
-```
-
-### Setup Prisma
-
-Add MySQL Database (I used PlanetScale)
-
-```shell
-npx prisma generate
-npx prisma db push
-
-```
-
-### Start the app
-
-```shell
-npm run dev
-```
-
-## Available commands
-
-Running commands with npm `npm run [command]`
-
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
